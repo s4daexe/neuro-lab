@@ -1,64 +1,114 @@
 # neuro-lab
-Exploring brain-computer interfaces through EEG signal processing, machine learning, and interactive visualization.
+🧠 NeuroMemory
 
-# Neuro Lab 🧠
+A Brain-Inspired Associative Memory System
 
-### Exploring Brain–Computer Interfaces
+NeuroMemory is an interactive computational neuroscience and artificial intelligence project exploring how neural networks can store and retrieve visual patterns.
 
-Neuro Lab is a computer engineering project focused on
-exploring how brain signals can be interpreted using
-signal processing and machine learning.
+The project focuses on associative memory, using a classical Hopfield network to investigate how stored information can be recovered from incomplete or corrupted inputs.
 
-The goal is to develop an experimental Brain–Computer
-Interface (BCI) using publicly available EEG datasets.
+🎯 Project Overview
 
-The project will gradually progress from understanding
-brain signals to building a system that can classify
-motor imagery and control a virtual interface.
+Imagine showing an artificial neural network a visual pattern, allowing it to learn that pattern, and later asking it to reconstruct the original from a distorted version.
 
-## 🎯 Project Objectives
+NeuroMemory aims to make this process interactive and visually understandable.
 
-- Understand the fundamentals of brain–computer interfaces.
-- Learn how EEG signals are recorded and processed.
-- Explore publicly available neuroscience datasets.
-- Apply signal processing techniques to brain activity.
-- Develop a machine learning model for motor imagery classification.
-- Build an interactive visualization controlled by model predictions.
-- Evaluate model accuracy and limitations.
+The application will allow users to:
 
-## 🛠️ Technologies
+* Create and store simple visual patterns.
+* Introduce noise into previously stored patterns.
+* Attempt to reconstruct corrupted patterns.
+* Visualize the network’s retrieval process.
+* Investigate how memory capacity and noise affect performance.
 
-**Primary language:** Python
+🔬 Research Question
 
-**Planned tools:**
-- NumPy
-- Matplotlib
-- MNE-Python
-- scikit-learn
+How do memory capacity and input corruption affect pattern retrieval accuracy in a classical Hopfield neural network?
 
-## 🚧 Development Status
+The project will explore the mathematical principles of associative memory and evaluate the model through controlled computational experiments.
 
-**Status:** Early development
+🧠 Neuroscience Background
 
-### Roadmap
+Associative memory allows information to be retrieved using partial or related cues.
 
-- [ ] Research brain–computer interface fundamentals
-- [ ] Learn basic Python for scientific computing
-- [ ] Explore an EEG motor imagery dataset
-- [ ] Visualize EEG signals
-- [ ] Preprocess and filter EEG recordings
-- [ ] Implement a baseline classification model
-- [ ] Evaluate classification performance
-- [ ] Build an interactive virtual control interface
-- [ ] Document results and limitations
+Hopfield networks are recurrent artificial neural networks that provide a simplified mathematical model of associative memory.
 
-## 📚 Learning Goals
+They store patterns through weighted connections between artificial neurons.
 
-This project is being developed alongside my Computer
-Engineering studies to strengthen my understanding of
-programming, signal processing, machine learning,
-and computational neuroscience.
+When presented with a noisy input, the network updates its states and may converge toward a previously stored pattern.
 
-## 📄 License
+These networks are inspired by ideas from neuroscience but do not reproduce the full complexity of biological memory.
 
-MIT License
+🛠️ Technologies
+
+* Python — Core implementation
+* NumPy — Numerical computations and matrix operations
+* Matplotlib — Scientific visualization
+* Interactive UI — Planned for later development
+* Git & GitHub — Version control and documentation
+
+🗺️ Development Roadmap
+
+Phase 1: Foundations
+
+* Learn essential Python concepts
+* Represent visual patterns numerically
+* Work with NumPy arrays
+* Visualize patterns using Matplotlib
+
+Phase 2: Neural Network Implementation
+
+* Understand Hopfield network architecture
+* Implement connection weights
+* Implement network state updates
+* Store and retrieve patterns
+
+Phase 3: Associative Memory
+
+* Introduce controlled noise
+* Recover corrupted patterns
+* Store multiple patterns
+* Investigate retrieval failures
+
+Phase 4: Interactive Visualization
+
+* Create a visual pattern editor
+* Implement memory storage and recall controls
+* Visualize retrieval steps
+* Develop an interactive application
+
+Phase 5: Research & Evaluation
+
+* Measure retrieval accuracy
+* Investigate memory capacity
+* Analyze the effects of noise
+* Compare results with a simple baseline
+* Document findings and limitations
+
+Phase 6: Final Release
+
+* Improve the user interface
+* Organize and document the codebase
+* Add tests and usage instructions
+* Prepare a project demonstration
+
+🚧 Project Status
+
+Currently in development — Phase 1: Foundations
+
+The initial focus is learning Python, representing visual patterns, and developing the mathematical foundations required for associative memory.
+
+🌱 Future Possibilities
+
+Potential extensions include:
+
+* More advanced associative-memory architectures
+* Image-based pattern completion
+* Brain-inspired learning mechanisms
+* Comparisons with other machine-learning models
+
+These are exploratory directions rather than guaranteed features.
+
+⸻
+
+NeuroMemory is an independent educational and research-oriented software project combining computer engineering, artificial intelligence, and computational neuroscience.
